@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #0d0c1d;
+  color: #f8f4f9;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.searchbar-label {
+  display: block;
+  margin: 10rem 0 2.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  background-color: #0d0c1d;
+  border: none;
+  outline: 2px solid #7c2af1;
+  color: #f8f4f9;
+}
+
+input[type="text"]:focus {
+  border: none;
+  outline-color: #f3414e;
+}
+
+.searchbar {
+  max-width: 25rem;
+  margin-bottom: 5rem;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.search-results-item {
+  background-color: #151630;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.search-item {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.search-item:last-child {
+  margin-bottom: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #151630;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7c2af1;
+  border-radius: 0.8rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 10rem;
+  margin: 4rem 0 2.5rem;
+}
+
+@media screen and (min-width: 2000px) {
+    html {
+        font-size: 92.5%;
+      }
+}
